@@ -9,11 +9,11 @@ public class PartTimeEmployee extends Employee {
     }
 
     public float calculateSalary() {
-        return this.salary + this.workedHours;
+        return this.getSalary() * this.getWorkedHours();
     }
 
-    public void requestAbscentPermit() {
-        System.out.println("Abscent permit successfully requested.");
+    public void requestAbscentPermit(int abscentDays) {
+        System.out.println("Abscent permit for "+ abscentDays +" successfully requested.");
     }
 
     public void organizeInventory() {
