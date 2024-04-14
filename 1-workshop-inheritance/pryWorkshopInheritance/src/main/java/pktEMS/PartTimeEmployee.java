@@ -24,4 +24,23 @@ public class PartTimeEmployee extends Employee {
         System.out.println("Attending clients during work hours...");
     }
 
+    public final class DataAnalyst extends PartTimeEmployee {
+        public DataAnalyst(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours) {
+            super(id, firstName, lastName, hiringDate, salary, workedHours);
+        }
+
+        public void AnalyzeData(String dataSet) {
+            System.out.println("analyzing " + dataSet + " file...");
+        }
+
+        public void generateAnalysisReport(String dataSet) {
+            System.out.println("Generating a report for " + dataSet + "file...");
+        }
+
+        public void developPredictiveModel(String dataSet) {
+            System.out.println("Developing a predictive model from " + dataSet +" ...");
+        }
+
+    }
+
 }
