@@ -9,25 +9,21 @@ public class FullTimeEmployee extends Employee {
     }
 
     public double CalculateSalary() {
-        // Implement salary calculation
         return this.getSalary() * this.getWorkedHours();
     }
     
     public void requestVacation(int vacationDays) {
         System.out.println("Vacation request for " + vacationDays + " days in process.");
-        // Implement logic to handle vacation requests (deduct days, send for approval, etc.)
     }
     
     public void registerAttendance() {
-        System.out.println("Welcome, " + this.getName() + ". Registering your presence...");
-        this.setPresentAttendance(this.getPresentAttendance() + 1);
-        System.out.println("Attendance recorded as present.");
+        System.out.println("Daily attendance recorded for: " + this.getFirstName() + " " + this.getLastName());
     }
 
     public void receiveBonus() {
         double bonusAmount = this.getSalary() * 0.1; // Bonus is 10%
-        System.out.println("Recieve a bonus of $" + bonusAmount + ".");
-        this.setSalary(this.getSalary() + bonusAmount);
+        System.out.println("Receive a bonus of $" + bonusAmount + ".");
+        this.setSalary((float) (this.getSalary() + bonusAmount));
     }
 
 }
