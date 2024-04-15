@@ -56,7 +56,7 @@ public class FullTimeEmployee extends Employee {
         this.setSalary((float) (this.getSalary() + bonusAmount));
     }
 
-    public final class Manager extends FullTimeEmployee{
+    public static final class Manager extends FullTimeEmployee{
         public Manager(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours, String department, float bonus) {
             super(id, firstName, lastName, hiringDate, salary, workedHours, department);
         }
@@ -74,7 +74,7 @@ public class FullTimeEmployee extends Employee {
         }
     }
 
-    public final class Secretary extends FullTimeEmployee{
+    public static final class Secretary extends FullTimeEmployee{
         public Secretary(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours, String department, float bonus) {
             super(id, firstName, lastName, hiringDate, salary, workedHours, bonus);
         }
@@ -92,7 +92,7 @@ public class FullTimeEmployee extends Employee {
         }
     }
 
-    public final class SoftwareEngineer extends FullTimeEmployee {
+    public static final class SoftwareEngineer extends FullTimeEmployee {
         public SoftwareEngineer(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours, String department, float bonus) {
             super(id, firstName, lastName, hiringDate, salary, workedHours, bonus);
         }
@@ -110,7 +110,7 @@ public class FullTimeEmployee extends Employee {
         }
     }
 
-    public final class SupportTechnician extends FullTimeEmployee {
+    public static final class SupportTechnician extends FullTimeEmployee {
         public SupportTechnician(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours, String department, float bonus) {
             super(id, firstName, lastName, hiringDate, salary, workedHours, bonus);
         }
