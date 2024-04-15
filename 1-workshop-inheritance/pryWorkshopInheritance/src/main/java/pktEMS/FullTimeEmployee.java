@@ -48,6 +48,78 @@ public class FullTimeEmployee extends Employee {
         this.setSalary((float) (this.getSalary() + bonusAmount));
     }
 
+    public final class Manager extends FullTimeEmployee{
+        public Manager(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours, String department, float bonus) {
+            super(id, firstName, lastName, hiringDate, salary, workedHours, department, bonus);
+        }
+
+        public void assignTask(String name){
+            System.out.println("Assigning a task for " + name + ".");
+        }
+
+        public void manageTeam(String team){
+            System.out.println("Managing the  " + team + " team...");
+        }
+
+        public void generateReport(){
+            System.out.println("Generating a report for " + this.department + "...");
+        }
+    }
+
+    public final class Secretary extends FullTimeEmployee{
+        public Secretary(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours, String department, float bonus) {
+            super(id, firstName, lastName, hiringDate, salary, workedHours, department, bonus);
+        }
+
+        public void manageAgenda(){
+            System.out.println("Including new meets to manager at this week...");
+        }
+
+        public void writeCorrespondence(String company){
+            System.out.println("Writing a letter to the CEO of "+ company +" ...");
+        }
+
+        public void organizeDocuments(){
+            System.out.println("Organizing the documents of the Boss...");
+        }
+    }
+
+    public final class SoftwareEngineer extends FullTimeEmployee {
+        public SoftwareEngineer(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours, String department, float bonus) {
+            super(id, firstName, lastName, hiringDate, salary, workedHours, department, bonus);
+        }
+
+        public void developSoftware() {
+            System.out.println("Developing new updates...");
+        }
+
+        public void testingSoftware() {
+            System.out.println("Testing the new implementations in the software...");
+        }
+
+        public void maintenanceSystem() {
+            System.out.println("Starting system maintenance...");
+        }
+    }
+
+    public final class SupportTechnician extends FullTimeEmployee {
+        public SupportTechnician(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours, String department, float bonus) {
+            super(id, firstName, lastName, hiringDate, salary, workedHours, department, bonus);
+        }
+
+        public void solveIssue() {
+            System.out.println("Solving an issue...");
+        }
+
+        public void updateSoftware() {
+            System.out.println("Updating the software to all computers...");
+        }
+
+        public void provideGuidance() {
+            System.out.println("Provide guidance to users...");
+        }
+    }
+
 }
 
 
