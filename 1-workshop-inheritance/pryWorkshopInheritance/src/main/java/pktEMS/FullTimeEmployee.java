@@ -1,11 +1,33 @@
 package pktEMS;
 
 public class FullTimeEmployee extends Employee {
+    String department;
+    float bonus;
+
     public FullTimeEmployee() {
         super(0, "", "", "", 0.0f, 0);
     }
-    public FullTimeEmployee(int id, String firstName, String lastName, String hiringDate, float salary, int workedHours) {
+    public FullTimeEmployee(int id, String firstName, String lastName, String hiringDate, float salary,
+                            int workedHours, String department, float bonus) {
         super(id, firstName, lastName, hiringDate, salary, workedHours);
+        this.department = department;
+        this.bonus = bonus;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public float getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(float bonus) {
+        this.bonus = bonus;
     }
 
     public double CalculateSalary() {
@@ -26,7 +48,6 @@ public class FullTimeEmployee extends Employee {
         this.setSalary((float) (this.getSalary() + bonusAmount));
     }
 
-  }
 }
 
 
