@@ -44,6 +44,7 @@ To develop applications that handle inheritance, polymorphism, interfaces, datab
 *(In progress...)*
 
 1. Assignment 1: Workshop about Inheritance in Java.
+2. Assignment 2: Recreating popular websites using Figma (Theme: Netflix).
 
 ## Contribution Guidelines
 
