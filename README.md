@@ -12,10 +12,9 @@ Welcome to the repository for the Software Development 3 subject! This repositor
 ### Students:
 1. **Luis Leiva**
 2. **Fredy Villarreal**
-3. **Yousseph Salomón**
-4. **Abdelrahman Chehaboddin**
-5. **Quevin Batista**
-6. **Elvis Araúz**
+3. **Abdelrahman Chehaboddin**
+4. **Quevin Batista**
+5. **Elvis Araúz**
 
 ## About the Course
 
@@ -45,6 +44,8 @@ To develop applications that handle inheritance, polymorphism, interfaces, datab
 
 1. Assignment 1: Workshop about Inheritance in Java.
 2. Assignment 2: Recreating popular websites using Figma (Theme: Netflix).
+3. Assignment 3: Create a Footer using Ionic Angular.
+4. Assignment 4: Implement a rest API for arithmetic operations.
 
 ## Contribution Guidelines
 
